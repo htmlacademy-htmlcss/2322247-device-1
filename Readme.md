@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/1/user/2322247).
-* Наставник: `Неизвестно`.
+* Студент: [Татьяна Бедрина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2322247).
+* Наставник: Антон Казаков
 
 ---
 
