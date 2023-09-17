@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
   <header class="catalog_header">
-    <a class="header_logo" href="index.html"> 
-      <img class="header_logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип Device"> 
+    <a class="header_logo" href="index.html">
+      <img class="header_logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип Device">
     </a>
     <form action="https://echo.htmlacademy.ru/courses" method="get">
       <label class="visually-hidden" for="name_placeholder">
@@ -21,7 +22,7 @@
     </form>
     <section class="account">
       <a class="account_name" href="#">
-        <span>Коля Петухов</span>
+        <span class="account_name">Коля Петухов</span>
       </a>
       <button type="account">Выйти</button>
     </section>
@@ -88,6 +89,8 @@
     <section class="catalog_products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <div class="choice">
+        <p class="name_choice">Фильтр:</p>
+        <p class="cost">Стоимость</p>
         <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -141,14 +144,14 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button_show" type="submit">Показать</button>
         </form>
       </div>
       <section class="page_catalog">
         <div class="section_sort">
-          <span class="select-control">Сортировка</span>
-          <select class="select-control">
-            <option value="popular">Популярное</option>
+          <span class="select-control">Сортировка:</span>
+          <select class="select-control_choice">
+            <option value="popular">Популярные</option>
           </select>
           <a href="#" class="button button-light">
             <span class="visually-hidden">По уменьшению</span>
@@ -157,39 +160,39 @@
             <span class="visually-hidden">По увеличению</span>
           </a>
         </div>
-
+        <div class="catalog_product">
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-link-foto" src="images/content/product-2.jpg" width="360" height="380" alt="">
-              <h3 class="product-card-title">Любительская селфи-палка</h3>
+              <h3 class="product-card-title">Любительская</br> селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-link-foto" src="images/content/product-2-1.jpg" width="360" height="380" alt="">
-              <h3 class="product-card-title">Профессиональная селфи-палка </h3>
+              <h3 class="product-card-title">Профессиональная </br>селфи-палка </h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-link-foto" src="images/content/product-2-2.jpg" width="360" height="380" alt="">
-              <h3 class="product-card-title">Непотопляемая селфи-палка </h3>
+              <h3 class="product-card-title">Непотопляемая </br> селфи-палка </h3>
             </a>
             <b class="product-card-price">2500 ₽</b>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-link-foto" src="images/content/product-2-3.jpg" width="360" height="380" alt="">
-              <h3 class="product-card-title">Селфи-палка «Следуй за мной» </h3>
+              <h3 class="product-card-title">Селфи-палка «Следуй </br> за мной» </h3>
             </a>
             <b class="product-card-price">1500 ₽</b>
           </li>
         </ul>
         <a class="button pagination-show-more" type="button">Загрузить ещё</button>
-        <div class="pagination">
+        <div class="pagination_all">
           <a class="back" href="#">Назад</a>
           <ul class="pagination">
             <li class="pagination-item">
@@ -210,6 +213,7 @@
           </ul>
           <a class="next" href="#">Вперед</a>
         </div>
+        </div>
       </section>
     </section>
   </main>
@@ -217,13 +221,16 @@
     <div class="adress_footer_logo">
       <img class="adress_footer_logo" src="images/logo/logo_footer.svg" width="145" height="36" alt="Логотип Device">
       <address class="adress_footer">
-        <p class="adress_footer_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="adress_footer_text">Санкт-Петербург, набережная</br> реки Карповки, 5, литера П.</p>
       </address>
     </div>
     <section class="navigation_footer">
       <a class="navigation_footer_item">Доставка</a>
       <a class="navigation_footer_item">Гарантия</a>
       <a class="navigation_footer_item">Контакты</a>
+      <div class="telephone_footer">
+        <a class="telephone_footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
       <div class="social_footer">
         <ul class="social_footer_list">
           <li class="social_footer_item">
@@ -244,9 +251,8 @@
         </ul>
       </div>
     </section>
-    <div class="telephone_footer">
-      <a class="ctelephone_footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="logo_htmlacademy" href="https://htmlacademy.ru/">.htmlacademy </a>
+    <div class="logo_htmlacademy">
+      <a class="logo_htmlacademy" href="https://htmlacademy.ru/">.htmlacademy</a>
     </div>
   </footer>
 </body>
