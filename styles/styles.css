@@ -1,27 +1,30 @@
 
 @font-face {
-  font-family: raleway;
+  font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2");
   font-display: swap;
 }
+
 @font-face {
-  font-family: rubik;
+  font-family: Rubik;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/rubik/rubic-400.woff2");
   font-display: swap;
 }
+
 @font-face {
-  font-family: rubik;
+  font-family: Rubik;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/rubik/rubic-700.woff2");
   font-display: swap;
 }
+
 body {
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -33,8 +36,10 @@ body {
   background-color: #FFE17F;
 }
 
- .navigation_link, .navigation_conditions_link, .all_navigation_link {
-  font-family: "raleway", sans-serif;
+ .navigation_link,
+ .navigation_conditions_link,
+ .all_navigation_link {
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: #000000;
   font-weight: 800;
@@ -45,7 +50,8 @@ body {
   text-transform: uppercase;
   border: none;
 }
-.zero_one {
+
+.advertising {
   font-size: 180px;
   line-height: 30px;
   color: #ffffff;
@@ -56,16 +62,17 @@ body {
   text-transform: uppercase;
 }
 
-
 .main_index {
   color: #000000;
   background-color: #ffff;
 }
+
 .quadcopter_info {
   text-align: center;
 }
+
 .quadcopter_info_title{
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color:#000000;
@@ -74,9 +81,10 @@ body {
 }
 
 .quadcopter_info_text{
-  color:#000000;
+  color:#444444;
   text-align: left;
 }
+
 .account, .comparison, .basket button{
 font-size: 18px;
 font-weight: 400;
@@ -88,19 +96,21 @@ background-color:#FFE17F;
 }
 
 .numbers{
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 font-size: 36px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
 }
+
 .name_nambers{
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
 }
+
 .more{
   font-family: "raleway", sans-serif;
   line-height: 21px;
@@ -113,8 +123,13 @@ text-align: left;
   text-transform: uppercase;
 }
 
-.virtual_reality, .selfie_monopods, .action_cameras, .fitness_bracelets, .smart_watch, .quadcopters{
-  font-family: "raleway", sans-serif;
+.virtual_reality,
+.selfie_monopods,
+.action_cameras,
+.fitness_bracelets,
+.smart_watch,
+.quadcopters{
+  font-family: "Raleway", sans-serif;
   line-height: 24px;
   color: #000000;
   font-weight: 800;
@@ -124,8 +139,9 @@ text-align: left;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .navigation_info_link{
-  font-family: "raleway", sans-serif;
+font-family: "Raleway", sans-serif;
 font-size: 18px;
 font-weight: 800;
 line-height: 21px;
@@ -135,56 +151,69 @@ color: #000000;
 text-decoration: none;
 text-transform: uppercase;
 }
+
 .delivery{
-  font-family: "raleway", sans-serif;
+font-family: "Raleway", sans-serif;
 font-size: 50px;
 font-weight: 800;
 line-height: 50px;
 text-align: left;
-
 }
+
 .delivery_text{
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
   background-color:  #F0F0F0;
-
+  color: #444444;
 }
+
 .delivery_on_order {
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 23px;
   color: #000000;
   font-weight: 800;
   text-align: center;
   background-color:  #F0F0F0;
-
   font-size: 20px;
-
 }
 
-.about_us_title, .contacts_title {
-  font-family: "raleway", sans-serif;
+.about_us_title,
+.contacts_title {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color:#000000;
   font-weight: 800;
 }
+
 .about_us_text{
-  text-align: left;}
-  .contacts_address_text, .contacts_phone, .contacts-schedule-item {
-    font-family: "rubik", sans-serif;
+text-align: left;
+color:#444444;
+}
+
+.contacts_title_text,
+.contacts_subtitle{
+  color:#444444;
+}
+
+.contacts_address_text,
+.contacts_phone,
+.contacts-schedule-item {
+    font-family: "Rubik", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    color: #000000;
+    color: #444444;
     text-align: left;
     text-decoration: none;
     font-style: normal;
+}
 
-    }
-.more_about_us, .button {
-  font-family: "raleway", sans-serif;
+.more_about_us,
+.button {
+  font-family: "Raleway", sans-serif;
   line-height: 21px;
   color: #000000;
   font-weight: 800;
@@ -194,26 +223,33 @@ text-align: left;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 .subscription{
   background-color: #F0F0F0;
 }
 
 .subscription_title{
-
-  font-family:"raleway", sans-serif;
+  font-family:"Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
   text-align: left;
-
 }
+
 .subscription_text{
   text-align: left;
+  color:#444444;
 }
+
 .catalog_footer {
   color: #ffffff;
   background-color: #444444;
 }
+
+.it_is_free{
+  color:#444444;
+}
+
 .adress_footer_text, .telephone_footer{
   font-weight: 400;
   line-height: 20px;
@@ -222,8 +258,9 @@ text-align: left;
   color: #ffffff;
   text-decoration: none;
 }
+
 .navigation_footer_item {
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-size: 18px;
   font-weight: 800;
@@ -232,20 +269,24 @@ text-align: left;
   text-align: left;
   text-transform: uppercase;
 }
+
 .adress_footer_logo{
   text-align: left;
 }
+
 .account_name{
   color: #000000;
   text-decoration: none;
 }
+
 .catalog_name_choice{
-font-family: "raleway", sans-serif;
+font-family: "Raleway", sans-serif;
 font-size: 50px;
 font-weight: 800;
 line-height: 50px;
 text-align: left;
 }
+
 .breadcrumbs-link{
   font-size: 16px;
   font-weight: 400;
@@ -254,8 +295,9 @@ text-align: left;
   color: #000000;
   text-decoration: none;
 }
+
 .name_choice{
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 font-size: 16px;
 font-weight: 800;
 line-height: 19px;
@@ -263,26 +305,32 @@ letter-spacing: 0.2em;
 text-align: left;
 text-transform: uppercase;
 }
-.cost, .catalog-filter-title {
+
+.cost,
+.catalog-filter-title {
 font-weight: 700;
 line-height: 20px;
 letter-spacing: -0.02em;
 text-align: left;
 }
+
 .control{
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
    text-align: left;
 }
+
 .catalog_products{
   background-color:#F0F0F0;
 }
+
 .catalog_product{
   background-color: #ffffff;
 }
+
 .button_show {
-  font-family: "raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -293,7 +341,7 @@ text-align: left;
 }
 
 .select-control{
-  font-family:"raleway", sans-serif;
+  font-family:"Raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
@@ -309,6 +357,7 @@ text-align: left;
   border: none;
   background-color: #F0F0F0;
 }
+
 .product-card-title {
   font-size: 18px;
   font-weight: 700;
@@ -318,13 +367,16 @@ text-align: left;
   color: #000000;
   text-decoration: none;
 }
+
 .product-card-price{
   font-weight: 400;
   line-height: 21px;
   text-align: right;
+  color: #444444;
 }
+
 .pagination-show-more{
-font-family: "raleway", sans-serif;
+font-family: "Raleway", sans-serif;
 font-size: 16px;
 font-weight: 800;
 line-height: 19px;
@@ -332,21 +384,37 @@ letter-spacing: 0.2em;
 text-align: center;
 border: 3px solid #E5E5E5;
 }
-.back, .next, .pagination-link {
-  font-family:"raleway", sans-serif;
+
+.back,
+.pagination-link {
+  font-family:"Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: left;
-  color: #000000;
+  color: #444444;
   text-decoration: none;
   list-style-type:none;
   background-color: #E5E5E5;
   }
-  .pagination_all{
+
+.next{
+    font-family:"Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    list-style-type:none;
     background-color: #E5E5E5;
-  }
-  .pagination ul {
+}
+
+.pagination_all{
+    background-color: #E5E5E5;
+}
+
+.pagination ul {
     margin-block-start:0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
