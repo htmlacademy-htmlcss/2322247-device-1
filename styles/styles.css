@@ -35,7 +35,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .main_conteiner {
@@ -76,7 +76,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: start;
   display: flex;
   justify-content: space-between;
 }
@@ -86,7 +85,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: start;
   display: flex;
   justify-content: space-between;
 }
@@ -101,7 +99,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: start;
   display: flex;
   justify-content: space-between;
 }
@@ -139,13 +136,18 @@ body {
 .quadcopter_info {
   width: 1160px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .catalog {
   width: 1160px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog_list {
@@ -153,10 +155,15 @@ body {
 }
 
 .navigation_more_info {
-  width: 1440px;
+  background-color: #F0F0F0;
+  ;
+}
+
+.center_page{
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navigation_conditions_delivery {
@@ -193,7 +200,6 @@ body {
 }
 
 .subscription {
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -245,6 +251,8 @@ body {
 .footer_conteiner {
   margin: 0 auto;
   width: 1160px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .telephone_logo {
@@ -257,15 +265,14 @@ body {
 }
 
 .page_catalog {
-  width: 1160px;
+  background-color: #F0F0F0;
   margin: 0 auto;
-  display: flex;
 }
 
 .advertising {
   font-size: 180px;
   line-height: 30px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 700;
   text-align: right;
   background-color: #FFE17F;
@@ -304,7 +311,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: start;
 }
 
 .button_header,
@@ -320,13 +326,11 @@ body {
 .numbers {
   font-size: 36px;
   font-weight: 400;
-  text-align: start;
 }
 
 .name_nambers {
   font-size: 16px;
   font-weight: 400;
-  text-align: start;
 }
 
 .more {
@@ -360,7 +364,7 @@ body {
 }
 
 .catalog_list_text {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .catalog_list {
@@ -392,11 +396,9 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  text-align: start;
 }
 
 .delivery_text {
-  text-align: start;
   color: #444444;
   margin: 0;
 }
@@ -423,14 +425,12 @@ body {
 }
 
 .about_us_text {
-  text-align: start;
   color: #444444;
 }
 
 .contacts_title_text,
 .contacts_subtitle {
   color: #444444;
-  text-align: start;
 }
 
 .contacts_address_text,
@@ -441,13 +441,8 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
-  text-align: start;
   text-decoration: none;
   font-style: normal;
-}
-
-.transport_companies_item {
-  text-align: start;
 }
 
 .more_about_us,
@@ -457,7 +452,7 @@ body {
   color: #000000;
   font-weight: 800;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -472,20 +467,15 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  text-align: start;
 }
 
 .subscription_text {
-  text-align: start;
   color: #444444;
 }
 
 .catalog_footer {
-  width: 1440px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #444444;
-  display: flex;
-  justify-content: space-between;
 }
 
 .it_is_free {
@@ -497,30 +487,26 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: start;
   font-style: normal;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .navigation_footer_item {
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-align: start;
   text-transform: uppercase;
 }
 
 .social_footer_item,
 .contacts-schedule-item {
-  text-align: start;
   list-style: none;
 }
 
 .footer_logo_adress {
-  text-align: start;
   width: 234px;
   margin: 0;
   padding: 0;
@@ -536,7 +522,6 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  text-align: start;
 }
 
 .breadcrumbs {
@@ -549,7 +534,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: start;
   color: #000000;
   text-decoration: none;
 }
@@ -568,7 +552,6 @@ body {
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 0.2em;
-  text-align: start;
   text-transform: uppercase;
 }
 
@@ -577,24 +560,33 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
-  text-align: start;
 }
 
 .control {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: start;
 }
 
 .catalog_products {
-  background-color: #F0F0F0;
   width: 1160px;
   margin: 0 auto;
+  display: flex;
 }
 
 .catalog_product {
-  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.product-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .button_show {
@@ -614,14 +606,12 @@ body {
   font-weight: 800;
   line-height: 19px;
   letter-spacing: 0.2em;
-  text-align: start;
   text-transform: uppercase;
 }
 
 .select-control_choice {
   font-weight: 400;
   line-height: 30px;
-  text-align: start;
   border: none;
   background-color: #F0F0F0;
 }
@@ -631,7 +621,6 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
-  text-align: start;
   color: #000000;
   text-decoration: none;
 }
@@ -643,6 +632,12 @@ body {
   color: #444444;
 }
 
+.pagination{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .pagination-show-more {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -651,6 +646,7 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
   border: 3px solid #E5E5E5;
+  width: 760px;
 }
 
 .back,
@@ -658,26 +654,32 @@ body {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-align: start;
   color: #444444;
   text-decoration: none;
   list-style-type: none;
   background-color: #E5E5E5;
 }
 
+.back{
+  text-transform: uppercase;
+}
+
 .next {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-align: start;
   color: #000000;
   text-decoration: none;
   list-style-type: none;
   background-color: #E5E5E5;
+  text-transform: uppercase;
 }
 
 .pagination_all {
   background-color: #E5E5E5;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo_htmlacademy {
