@@ -10,18 +10,18 @@
   <body>
     <header class="page_header">
       <a class="header_logo" href="index.html">
-        <img class="header_logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип Device">
+        <img class="header_logo_img" src="images/logo/logo.svg" width="145" height="36" alt="Логотип Device">
       </a>
       <nav class="navigation_properties">
         <ul class="navigation_find">
           <li class="navigation_find_item">
             <form action="https://echo.htmlacademy.ru/courses" method="get">
-              <input type="text" name="search" value="поиск по сайту">
-              <input type="submit" value="найти">
+              <input class="find" type="text" name="search" value="Поиск по сайту">
+              <input class="find_button" type="submit" value="Найти">
             </form>
           </li>
           <li class="navigation_find_item_button">
-            <button type="button">Войти</button>
+            <button class="enter" type="button">Войти</button>
           </li>
         </ul>
         <ul class="basket">
@@ -39,22 +39,22 @@
             <a class="navigation_link">Каталог товаров</a>
             <ul class="all_navigation_list">
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Виртуальная реальность</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Виртуальная реальность</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Моноподы для селфи</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Моноподы для селфи</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Экшн-камеры</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Экшн-камеры</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Фитнес-браслеты</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Фитнес-браслеты</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Умные часы</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Умные часы</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link" href="#" hidden>Квадрокоптеры</a>
+                <a class="all_navigation_link visually-hidden" href="#" >Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -73,11 +73,11 @@
       </nav>
     </header>
     <main class="main_conteiner main_index">
-      <h1 class="visually-hidden" hidden>Сайт интернет-магазина Device</h1>
-      <section class="quadcopter_info">
-        <p class="advertising">01</p>
+      <h1 class="visually-hidden" >Сайт интернет-магазина Device</h1>
+       <section class="quadcopter_info">
         <img class="quadcopter_info_foto" src="images/content/slider-1.png" width="560" height="560"
           alt="Модель квадрокоптера с лазером">
+        <p class="advertising">01</p>
         <div class="text_right">
         <b class="quadcopter_info_title">Порхает как бабочка,</br> жалит как пчела!</b>
         <p class="quadcopter_info_text">Этот обычный, на первый взгляд, квадрокоптер оснащен </br> мощным лазером,
@@ -97,62 +97,64 @@
         </div>
       </section>
       <nav class="center_page">
-        <h2 class="visually-hidden" hidden>Популярные категории</h2>
+        <h2 class="visually-hidden" >Популярные категории</h2>
         <ul class="catalog">
           <li class="catalog_list">
             <a class="virtual_reality" href="#">
-              <img class="virtual_reality" src="images/content/Vector.svg" width="97" height="55" alt=" ">
-              <p class="catalog_list_text"> виртуальная реальность </p>
+              <img class="virtual_reality_img" src="images/content/Vector.svg" width="97" height="55" alt=" ">
+              <p class="catalog_list_text"> Виртуальная реальность </p>
             </a>
           </li>
           <li class="catalog_list">
             <a class="selfie_monopods" href="#">
-              <img class="selfie_monopods" src="images/content/Vector-1.svg" width="86" height="117" alt=" ">
-              <p class="catalog_list_text"> моноподы для селфи </p>
+              <img class="selfie_monopods_img" src="images/content/Vector-1.svg" width="86" height="117" alt=" ">
+              <p class="catalog_list_text"> Моноподы для селфи </p>
             </a>
           <li class="catalog_list">
             <a class="action_cameras" href="#">
-              <img class="action_cameras" src="images/content/Vector-2.svg" width="71" height="87" alt=" ">
+              <img class="action_cameras_img" src="images/content/Vector-2.svg" width="71" height="87" alt=" ">
               <p class="catalog_list_text"> Экшн-камеры </p>
             </a>
           </li>
           <li class="catalog_list">
             <a class="fitness_bracelets" href="#">
-              <img class="fitness_bracelets" src="images/content/Vector-3.svg" width="107" height="65" alt=" ">
+              <img class="fitness_bracelets_img" src="images/content/Vector-3.svg" width="107" height="65" alt=" ">
               <p class="catalog_list_text"> Фитнес-браслеты </p>
             </a>
           </li>
           <li class="catalog_list">
             <a class="smart_watch" href="#">
-              <img class="smart_watch" src="images/content/Vector-4.svg" width="56" height="98" alt=" ">
+              <img class="smart_watch_img" src="images/content/Vector-4.svg" width="56" height="98" alt=" ">
               <p class="catalog_list_text"> Умные часы </p>
             </a>
           </li>
           <li class="catalog_list">
             <a class="quadcopters" href="#">
-              <img class="quadcopters" src="images/content/Vector-5.svg" width="132" height="69" alt=" ">
+              <img class="quadcopters_img" src="images/content/Vector-5.svg" width="132" height="69" alt=" ">
               <p class="catalog_list_text"> Квадрокоптеры </p>
             </a>
           </li>
         </ul>
       </nav>
       <div class="navigation_more_info">
-        <div class="center_page">
+        <div class="center_page_another">
         <ul>
           <li class="navigation_info">
-            <a class="navigation_info_link" href="#">Доставка</a>
+            <a class="navigation_info_link_delivery" href="#">Доставка</a>
           </li>
           <li class="navigation_info">
-            <a class="navigation_info_link" href="#">Гарантия</a>
+            <a class="navigation_info_link_guarantee" href="#">Гарантия</a>
           </li>
           <li class="navigation_info">
-            <a class="navigation_info_link" href="#">Кредит</a>
+            <a class="navigation_info_link_credit" href="#">Кредит</a>
           </li>
         </ul>
         <div class="navigation_conditions_delivery">
           <p class="delivery">Доставка</p>
           <p class="delivery_text">Мы с удовольствием доставим ваш товар прямо </br> к вашему подъезду совершенно
             бесплатно! Ведь</br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="navigation_info_img">
         </div>
         </div>
       </div>
@@ -193,12 +195,11 @@
       </div>
       </section>
       <section class="subscription">
-        <div class="center_page">
+        <div class="center_page_subscription">
         <div class="subscription_text_title">
           <h2 class="subscription_title">Подпишитесь на рассылку</h2>
           <p class="subscription_text">Еженедельный дайджест с обзорами новинок,</br> длительными тест-драйвами,
-            распаковками, а
-            также акции, </br> спецпредложения и вот это вот всё.</p>
+            распаковками, а также акции, </br> спецпредложения и вот это вот всё.</p>
         </div>
         <div class="email_news">
           <form class="newsletter_form" action="https://echo.htmlacademy.ru/" method="post">
@@ -247,7 +248,7 @@
           </div>
         </section>
         <div class="telephone_logo">
-          <a class="telephone_footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="telephone_footer" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="logo_htmlacademy" href="https://htmlacademy.ru/">.htmlacademy</a>
         </div>
       </div>
