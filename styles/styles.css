@@ -10,7 +10,7 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/rubik/rubic-400.woff2");
+  src: url("../fonts/rubik/rubik-400.woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/rubik/rubic-700.woff2");
+  src: url("../fonts/rubik/rubik-700.woff2");
   font-display: swap;
 }
 
@@ -63,6 +63,7 @@ body {
 .page_header,
 .catalog_header {
   color: #000000;
+  margin-top: 40px;
 }
 
 .navigation_link,
@@ -84,11 +85,12 @@ body {
   justify-content: space-between;
 }
 
-.navigation_link:hover .menu_catalog circle,
-.navigation_link:hover .menu_catalog g,
-.navigation_link:active .menu_catalog circle,
-.navigation_link:active .menu_catalog g {
-  opacity: 100%;
+.navigation_link:hover .menu_catalog {
+  opacity: 1;
+}
+
+.navigation_link:active .menu_catalog {
+  opacity: 1;
 }
 
 .navigation_link:focus {
@@ -99,15 +101,10 @@ body {
 .catalog_header {
   width: 1160px;
   margin: 0 auto;
+ position: relative;
+ top: 20px;
 }
 
-.page_header::before,
-.catalog_header::before {
-  content: '';
-  display: block;
-  height: 40px;
-  background-color: #FFFFFF;
-}
 
 .navigation_find {
   list-style: none;
@@ -128,7 +125,6 @@ body {
 }
 
 .button_header {
-  width: 99px;
   display: inline-block;
   cursor: pointer;
 }
@@ -170,6 +166,10 @@ body {
 
 .name_account {
   width: 146px;
+  background-image: url("../images/decor/sign_in.svg");
+  background-repeat: no-repeat;
+  padding-left: 27px;
+  background-position-y: 9px;
 }
 
 .exit_account {
@@ -207,7 +207,7 @@ body {
 
 .find {
   width: 359px;
-  padding: 10px 0 10px 16px;
+  padding: 10px 0 10px 48px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -217,6 +217,9 @@ body {
   border: 2px solid #000000;
   margin: 0;
   box-sizing: border-box;
+  background-image: url("../images/decor/find.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
 }
 
 .input + .input {
@@ -295,7 +298,7 @@ body {
 
 .center_page,
 .center_page_subscription {
-  margin: 70px auto;
+  margin: 36px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -307,7 +310,7 @@ body {
 }
 
 .center_page_another {
-  margin: 70px auto;
+  margin: 65px auto;
   display: flex;
   justify-content: space-between;
   width: 1160px;
@@ -322,7 +325,7 @@ body {
 .navigation_conditions_delivery {
   width: 694px;
   display: flex;
-  margin: 72.5px 0 72.5px 116px;
+  margin: 72px 0 72px 124px;
 }
 
 .navigation_info {
@@ -355,6 +358,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .about_us {
@@ -388,6 +392,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
+    left: 8px;
 }
 
 .subscription_title {
@@ -408,12 +414,17 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   width: 253px;
-  padding: 18px 39px;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
-  border: 3px solid #C4C4C4;
+  outline: 3px solid #C4C4C4;
   font-size: 18px;
-  max-height: 57px;
+  border: none;
+  height: 57px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:-57px;
+  left: 560px;
 }
 
 .newsletter_button:hover {
@@ -461,18 +472,23 @@ body {
 .it_is_free {
   width: 160px;
   color: #444444;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin: 13px 0;
+  padding-left: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: url("..//images/decor/it_is_free.svg");
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  position: relative;
+    left: 32px;
+    height: 30px;
 }
 
 .email_news {
   width: 1160px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
 }
 
 .social_footer_list {
@@ -529,6 +545,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
+  margin-bottom: 61px;
 }
 
 .footer_conteiner {
@@ -567,15 +584,15 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  left: 301px;
-  top: 19px;
+  left: 339px;
+  top: 45px;
 }
 
 .text_right {
   width: 560px;
   position: relative;
-  top: -495px;
-  right: -610px;
+  top: -604px;
+    right: -598px;
 }
 
 .quadcopter_info_title {
@@ -585,10 +602,53 @@ body {
   font-weight: 800;
 }
 
+.circle_one{
+  display: flex;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #000000;
+  outline: 2px solid #000000;
+}
+
+.circle_two,
+.circle_three{
+  display: flex;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  outline: 2px solid #000000;
+}
+
 .quadcopter_info_foto {
   position: relative;
-  top: -54px;
-  left: -20px;
+  top: -95px;
+}
+
+.quadcopter_info_foto_before_after::before{
+  width: 20px;
+  display: flex;
+  height: 60px;
+  position: relative;
+  content: '';
+  background-image: url("..//images/decor/back.svg");
+  background-repeat: no-repeat;
+  top:175px;
+  left: 30px;
+}
+
+.quadcopter_info_foto_before_after:after{
+  width: 20px;
+  display: flex;
+  height: 60px;
+  position: relative;
+  content: '';
+  background-image: url("..//images/decor/next.svg");
+  background-repeat: no-repeat;
+  top: -455px;
+  left: 540px;
 }
 
 .right,
@@ -617,17 +677,13 @@ body {
   opacity: 10%;
 }
 
-.left {
-  right: -20px;
-}
-
 .right {
-  right: 40px;
+  right: 20px;
 }
 
 .quadcopter_info_text {
   color: #444444;
-  margin: 29px 0;
+  margin: 27px 0;
   padding-right: 10px;
 }
 
@@ -639,14 +695,18 @@ body {
   background-color: #FFE17F;
   list-style: none;
   text-align: start;
-  padding: 0;
+  padding: 0 27px;
   display: flex;
   width: 81px;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: baseline;
+  background-image: url("../images/decor/sign_in.svg");
+  background-repeat: no-repeat;
+  background-position: 0 7px;
 }
 
-.basket button {
+.compare,
+.basket_svg{
   font-size: 18px;
   line-height: 30px;
   border: none;
@@ -664,10 +724,29 @@ body {
 
 .compare {
   width: 105px;
+  background-image: url("..//images/decor/comparison.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+  padding-left: 22px;
 }
 
 .basket_svg {
   width: 99px;
+  background-image: url("..//images/decor/basket.svg");
+  background-repeat: no-repeat;
+background-position: 0;
+}
+
+.img_car::before{
+  content: '';
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  position: absolute;
+  left: -125px;
+  background-image: url("..//images/decor/delivery_car.svg");
+  background-repeat: no-repeat;
+  background-position: 39px 35px;
 }
 
 .basket_view {
@@ -690,6 +769,10 @@ body {
   opacity: 30%;
 }
 
+.breadcrumbs-item{
+  line-height: 20px;
+}
+
 .product-card {
   margin: 0;
   list-style: none;
@@ -705,6 +788,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 228px;
+  font-size: 18px;
 }
 
 .product-description {
@@ -747,7 +831,6 @@ body {
   margin: 60px 0;
   width: 220px;
   color: #000000;
-  padding: 10px 5px;
   max-height: 20px;
 }
 
@@ -834,17 +917,19 @@ body {
 }
 
 .img_car {
-  width: 125px;
-  height: 100px;
-  background-color: #FFE17F;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 910px;
+  margin-left: 125px;
+  position: relative;
 }
 
 .catalog_list_text {
   background-color: #FFFFFF;
   text-align: start;
+  margin-top: 32px;
+  width: 165px;
 }
 
 .catalog_list {
@@ -1012,7 +1097,7 @@ body {
   height: 40px;
   left: -21px;
   background: #DCDCDC80;
-  filter: opacity(50%);
+  opacity: 50%;
   border-radius: 50%;
 }
 
@@ -1023,15 +1108,35 @@ body {
   line-height: 50px;
   color: #000000;
   font-weight: 800;
+  margin: 41px 0 48px 0;
 }
 
 .about_us_text {
   color: #444444;
+  margin: 30px 0;
+}
+
+.transport_companies_item{
+font-weight: 700;
+line-height: 20px;
+letter-spacing: -0.02em;
+margin-top: 19px;
+}
+
+.transport_companies_item::marker{
+  color: #FFC700;
+  font-size:8px;
 }
 
 .contacts_title_text,
 .contacts_subtitle {
   color: #444444;
+}
+
+.contacts_subtitle{
+  margin: 30px 0 15px 0;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .contacts_address_text,
@@ -1040,10 +1145,14 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 10px;
   color: #444444;
   text-decoration: none;
   font-style: normal;
+}
+
+.contacts_phone{
+  margin-top: 10px;
 }
 
 .more_about_us,
@@ -1058,6 +1167,10 @@ body {
   text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
+}
+
+.more_about_us{
+  margin-top: 22px;
 }
 
 .subscription {
@@ -1090,6 +1203,7 @@ body {
   line-height: 20px;
   font-style: normal;
   color: #FFFFFF;
+
 }
 
 .telephone_footer {
@@ -1112,6 +1226,23 @@ body {
 
 .adress_footer_text {
   margin: 35px 0 64px 0;
+  width: 244px;
+}
+
+.button-light-up{
+  background-image: url("..//images/decor/more.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  background-position: 10px 9px;
+}
+
+.button-light-down{
+background-image: url("..//images/decor/less.svg");
+background-repeat: no-repeat;
+height: 30px;
+width: 30px;
+background-position: 10px 9px;
 }
 
 .navigation_footer_item {
@@ -1174,6 +1305,7 @@ body {
 }
 
 .contacts-schedule {
+  margin: 25px 0;
   padding: 0;
 }
 
@@ -1208,6 +1340,7 @@ body {
   padding: 0;
   margin-bottom: 34px;
   margin-left: 60px;
+  line-height: 20px;
 }
 
 .breadcrumbs-link {
@@ -1260,7 +1393,7 @@ body {
   background-color: #000000;
   position: absolute;
   width: 200px;
-  top: 60px;
+  top: 76px;
 }
 
 .place {
@@ -1276,11 +1409,13 @@ body {
   background-color: #000000;
   position: absolute;
   width: 200px;
-  top: 35px;
+  top: -3px;
 }
 
 .catalog_filter {
   margin-top: 12px;
+  position: relative;
+    top: -43px;
 }
 
 .cost,
@@ -1291,18 +1426,21 @@ body {
 }
 
 .cost {
+  margin-top: 73px;
   margin-bottom: 98px;
 }
 
 .catalog-filter-group,
-.catalog-filter-group_Bluetooth {
+.catalog-filter-group_bluetooth {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-.catalog-filter-group_Bluetooth {
+.catalog-filter-group_bluetooth {
   margin-top: 12px;
+  position: relative;
+  top: 15px;
 }
 
 .catalog-filter-list {
@@ -1324,6 +1462,8 @@ body {
   height: 2px;
   background-color: #000000;
   width: 200px;
+  position: relative;
+    top: 14px;
 }
 
 .catalog_products {
@@ -1391,6 +1531,7 @@ body {
   background-color: #F0F0F0;
   width: 141px;
   max-height: 30px;
+  font-size: 18px;
 }
 
 .select-control_choice:hover {
@@ -1515,6 +1656,8 @@ body {
   padding: 18px 39px;
   text-transform: uppercase;
   box-sizing: border-box;
+  position: relative;
+  top:3px;
 }
 
 .pagination-show-more:hover {
@@ -1611,7 +1754,7 @@ body {
 
 .pagination_all {
   background-color: #EBEBEB;
-  ;
+  height: 71px;
   width: 760px;
   display: flex;
   justify-content: space-between;
@@ -1705,16 +1848,25 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  left: 16px;
+  left: -8px;
   top: -1px;
 }
+
+.contacts-schedule{
+height: 60px;
+display: flex;
+flex-wrap: wrap;
+width: 240px;
+}
+
+
 
 .counter::after {
   content: '';
   position: absolute;
   width: 21px;
   height: 21px;
-  left: -6px;
+  left:   -6px;
   background-color: #FFFFFF;
   border-radius: 50%;
   z-index: -2;
@@ -1728,13 +1880,12 @@ body {
   background-color: #FFE17F;
   position: absolute;
   width: 1160px;
-  top: 60px;
+  top: 25px;
   z-index: -5;
 }
 
 .breadcrumbs-link::after {
-  background-image:
-    url(decor/breadcrumbs.svg);
+  background-image:url(../images/decor/breadcrumbs.svg);
   display: block;
   width: 4px;
   height: 7px;
@@ -1742,17 +1893,14 @@ body {
   position: absolute;
   top: 6px;
   right: -22px;
-  background-color: red;
-}
-
-.breadcrumbs-link:last-child {}
+  }
 
 .navigation_find_item_button,
 .navigation_catalog_button {
   display: flex;
   cursor: pointer;
   width: 79px;
-  margin: 5px 0 5px 26px;
+  margin: 6px 0 5px 21px;
 }
 
 .navigation_catalog_button {
@@ -1785,7 +1933,7 @@ body {
   background-color: #FFE17F;
   position: absolute;
   width: 1160px;
-  top: 60px;
+  top: 22px;
   z-index: -5;
 }
 
@@ -1802,7 +1950,7 @@ body {
   justify-content: space-between;
   position: absolute;
   left: 542px;
-  top: 536px;
+  top: 513pxpx;
   max-height: 12px;
 }
 
