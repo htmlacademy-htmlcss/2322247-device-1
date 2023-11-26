@@ -316,12 +316,14 @@ body {
 }
 
 .navigation_more_info_delivery,
-.navigation_more_info_guarantee {
+.navigation_more_info_guarantee,
+.navigation_more_info_credit {
   height: 319px;
 }
 
 .navigation_more_info_delivery::after,
-.navigation_more_info_guarantee::after {
+.navigation_more_info_guarantee::after,
+.navigation_more_info_credit::after {
   content: '';
   display: block;
   height: 289px;
@@ -370,6 +372,16 @@ body {
   background-image: url(../images/decor/guarantee.svg);
   background-repeat: no-repeat;
   background-position: 558px;
+}
+
+.navigation_conditions_credit{
+  width: 729px;
+  margin: auto;
+  margin-left: 116px;
+  background-image: url(../images/decor/credite.svg);
+  background-repeat: no-repeat;
+  background-position: 558px;
+
 }
 
 .navigation_info {
