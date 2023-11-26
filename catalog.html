@@ -16,8 +16,10 @@
         <ul class="navigation_find">
           <li class="navigation_find_item">
             <form action="https://echo.htmlacademy.ru/courses" method="get">
-              <input class="find" type="text" name="search" value="Текст поиска">
-              <input class="find_button" type="submit" value="Найти">
+              <label class="visually-hidden" for="text_find">Текст поиска</label>
+              <input class="find" type="text" name="search" value="Текст поиска" id="text_find">
+              <label class="visually-hidden" for="button_find">Найти</label>
+              <input class="find_button" type="submit" value="Найти" id="button_find">
             </form>
           </li>
           <li class="navigation_catalog_button">
@@ -34,6 +36,51 @@
               <span class="counter">2</span>
               Корзина
             </button>
+
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <a class="popover-product" href="#">
+                      <img class="popover-product-img" src="images/content/product-1-small.jpg" width="39" height="43">
+                      <p class="cart-item-title first_product">Любительская селфи-палка</p>
+                    </a>
+                    <button type="button" class="cart-item-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                          fill="white" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="popover-product" href="#">
+                      <img class="popover-product-img" src="images/content/product-2-small.jpg" width="39" height="43">
+                      <p class="cart-item-title second_product">Профессиональная селфи-палка</p>
+                    </a>
+                    <button type="button" class="cart-item-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                          fill="white" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-sum">
+                    <span class="popover-sum-product">Товаров: 2</span>
+                    <span class="popover-sum-money">Сумма: 2000 ₽ </span>
+                  </li>
+                </ul>
+                <a class="popover-button" href="#">
+                  <span class="popover-button-open">Открыть корзину</span>
+                </a>
+              </div>
+            </div>
+
+
+
           </li>
         </ul>
       </nav>
@@ -56,24 +103,30 @@
               </svg>
             </a>
             <ul class="all_navigation_list">
+              <div class="all_colums">
+              <div class="fisrt_colums">
               <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Виртуальная реальность</a>
+                <a class="all_navigation_link" href="#">Виртуальная реальность</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Моноподы для селфи</a>
+                <a class="all_navigation_link" href="#">Моноподы для селфи</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Экшн-камеры</a>
+                <a class="all_navigation_link" href="#">Экшн-камеры</a>
+              </li>
+            </div>
+            <div class="second_colums">
+              <li class="all_navigation_item">
+                <a class="all_navigation_link" href="#">Фитнес-браслеты</a>
               </li>
               <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Фитнес-браслеты</a>
+                <a class="all_navigation_link" href="#">Умные часы</a>
               </li>
-              <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Умные часы</a>
+            </div>
+              <li class="all_navigation_item third_colums">
+                <a class="all_navigation_link" href="#">Квадрокоптеры</a>
               </li>
-              <li class="all_navigation_item">
-                <a class="all_navigation_link visually-hidden" href="#">Квадрокоптеры</a>
-              </li>
+            </div>
             </ul>
           </li>
         </ul>
@@ -109,10 +162,34 @@
         <section class="catalog_products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <div class="choice">
-            <p class="name_choice">Фильтр:</p>
-            <p class="cost">Стоимость</p>
-            <div class="place"></div>
+            <h2 class="name_choice">Фильтр:</h2>
             <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
+
+              <fieldset class="catalog-filter-group-cost">
+                <legend class="cost">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 55px">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
