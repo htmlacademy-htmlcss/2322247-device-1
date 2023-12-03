@@ -39,7 +39,8 @@
                 <ul class="cart-items-list">
                   <li class="cart-item">
                     <a class="popover-product" href="#">
-                      <img class="popover-product-img" src="images/content/product-1-small.jpg" width="39" height="43">
+                      <img class="popover-product-img" src="images/content/product-1-small.jpg" width="39" height="43"
+                        alt="Селфи-палка с экраном">
                       <p class="cart-item-title first_product">Любительская селфи-палка</p>
                     </a>
                     <button type="button" class="cart-item-button">
@@ -53,7 +54,8 @@
                   </li>
                   <li class="cart-item">
                     <a class="popover-product" href="#">
-                      <img class="popover-product-img" src="images/content/product-2-small.jpg" width="39" height="43">
+                      <img class="popover-product-img" src="images/content/product-2-small.jpg" width="39" height="43"
+                        alt="Селфи-палка телескопическая">
                       <p class="cart-item-title second_product">Профессиональная селфи-палка</p>
                     </a>
                     <button type="button" class="cart-item-button">
@@ -96,32 +98,37 @@
                 </defs>
               </svg>
             </a>
-            <ul class="all_navigation_list">
-              <ul class="first_string">
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Виртуальная реальность</a>
-                  </div>
-                </li>
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-              <ul class="second_string">
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="third_string">
-                <li class="all_navigation_item">
-                  <a class="all_navigation_link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
+            <ul class="all_navigation_list all_navigation_list_open">
+              <li>
+                <ul class="first_string">
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="second_string">
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="third_string">
+                  <li class="all_navigation_item">
+                    <a class="all_navigation_link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
@@ -165,11 +172,11 @@
               <table class="table_info">
                 <tr>
                   <td class="numbers">800 м</td>
-                  <td class="numbers">50 м</td>
+                  <td class="numbers number_one">50 м</td>
                 </tr>
                 <tr>
                   <td class="name_numbers">Дальность полета</td>
-                  <td class="name_numbers">Радиус поражения</td>
+                  <td class="name_numbers number_one">Радиус поражения</td>
                 </tr>
               </table>
             </div>
@@ -309,21 +316,21 @@
         </ul>
         <ul class="slider_info">
           <li class="navigation_more_info_delivery">
-            <div class="center_page_another">
+            <div class=" center_page_another center_page_another_delivery">
               <p class="delivery">Доставка</p>
               <p class="delivery_text">Мы с удовольствием доставим ваш товар прямо </br> к вашему подъезду совершенно
                 бесплатно! Ведь </br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </li>
-          <li class="navigation_more_info_guarantee visually-hidden">
-            <div class="center_page_another">
+          <li class="navigation_more_info_guarantee   visually-hidden">
+            <div class="center_page_another center_page_another_guarantee">
               <p class="delivery">Гарантия</p>
               <p class="delivery_text_guarantee">Если из-за возгорания купленного у нас товара у ваc сгорит дом — не
                 переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
           </li>
           <li class="navigation_more_info_credit visually-hidden">
-            <div class="center_page_another">
+            <div class="center_page_another center_page_another_credit">
               <p class="delivery">Кредит</p>
               <p class="delivery_text_credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
                 вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -331,12 +338,12 @@
           </li>
         </ul>
       </div>
-      <section class="info">
+      <div class="info">
         <button class="delivery_on_order">
           <span class="img_car">Доставим редкий товар под заказ</span>
-          <div class="square_info"></div>
         </button>
-      </section>
+        <div class="square_info"></div>
+      </div>
       <div class="about_and_contacts">
         <section class="about_us">
           <h2 class="about_us_title">О нас</h2>
@@ -368,8 +375,8 @@
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
           <a class="button_connection" href="#">Напишите нам</a>
+        </section>
       </div>
-      </section>
       <section class="subscription">
         <div class="center_page_subscription">
           <div class="subscription_text_title">
@@ -403,6 +410,7 @@
           </address>
         </div>
         <section class="navigation_footer">
+          <h2 class="visually-hidden">Краткая основная информация</h2>
           <div class="navigation_footer_item_conteiner">
             <a class="navigation_footer_item">Доставка</a>
             <a class="navigation_footer_item">Гарантия</a>
@@ -411,7 +419,7 @@
           <div class="social_footer">
             <ul class="social_footer_list">
               <li class="social_footer_item">
-                <a class="telegram" href="#">
+                <a class="telegram" href="https://t.me/htmlacademy">
                   <svg class="social_network" aria-hidden="true" focusable="false" width="14" height="12"
                     viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -422,7 +430,7 @@
                 </a>
               </li>
               <li class="social_footer_item">
-                <a class="youtube" href="#">
+                <a class="youtube" href=" https://www.youtube.com/user/htmlacademyru">
                   <svg class="social_network" aria-hidden="true" focusable="false" width="16" height="11"
                     viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -433,7 +441,7 @@
                 </a>
               </li>
               <li class="social_footer_item">
-                <a class="twitter" href="#">
+                <a class="twitter" href="https://twitter.com/htmlacademy_ru">
                   <svg class="social_network" aria-hidden="true" focusable="false" width="15" height="15"
                     viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -489,7 +497,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-close">
+    <div class="modal-container modal-close ">
       <div class="modal modal-auth">
         <section class="modal-content">
           <div class="modal-header">
@@ -522,7 +530,7 @@
               <div class="modal-number">
                 <p class="modal-title">
                   <span class="form-label">
-                    <span modal-title-count>Количество:</span>
+                    <span class="modal-title-count" >Количество:</span>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
 
