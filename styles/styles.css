@@ -498,19 +498,19 @@ body {
 .navigation_info_link:hover {
   padding-left: 68px;
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
 }
 
 .navigation_info_link:active {
   padding-left: 68px;
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
 }
 
 .navigation_info_link:focus {
   padding-left: 68px;
   background-color: #000000;
-  color: #FFE17F;
+  color: #ffe17f;
   position: relative;
   outline: #cccccc;
 }
@@ -3285,7 +3285,7 @@ body {
 .color_conteiner::after {
   content: "";
   display: block;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   height: 289px;
   position: absolute;
   top: 100px;
