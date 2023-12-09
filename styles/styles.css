@@ -509,9 +509,10 @@ body {
   background-color: #000000;
   color:#FFE17F;
   position: relative;
+  outline: #cccccc;
 }
 
-.navigation_info_link:focus::after{
+.navigation_info_link:focus::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -584,7 +585,7 @@ body {
 .subscription_text {
   width: 560px;
   color: #444444;
-  margin-top: 76px;
+  margin-top: 74px;
 }
 
 .newsletter_button {
@@ -606,7 +607,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -59px;
+  top: -62px;
   left: 559px;
 }
 
@@ -650,6 +651,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   outline: none;
+  position: relative;
+  top: -3px;
 }
 
 .it_is_free {
@@ -666,6 +669,7 @@ body {
   position: relative;
   left: 32px;
   height: 30px;
+  top: -3px;
 }
 
 .email_news {
@@ -1341,6 +1345,10 @@ body {
   padding: 4px;
   left: -5px;
   top: -6px;
+}
+
+.images_catalog_focus:focus{
+  outline: none;
 }
 
 .images_catalog {
@@ -3288,14 +3296,18 @@ body {
   top: -6px;
 }
 
-.find:focus::after{
+.find:focus + .find_button::after{
   content: "";
   position: absolute;
-  width: 100%;
+  width: 359px;
   height: 100%;
   border: 2px solid #af4fff;
   z-index: 2;
   padding: 4px;
-  left: -5px;
+  right: 152px;
   top: -6px;
+}
+
+.slider_no_visible{
+  display: none;
 }
