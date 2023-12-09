@@ -192,12 +192,12 @@ body {
   position: relative;
 }
 
-.button_header_basket:hover,
+.popover-close-button:hover,
 .button_header_compare:hover {
   opacity: 60%;
 }
 
-.button_header_basket:active,
+.popover-close-button:active,
 .button_header_compare:active {
   opacity: 30%;
 }
@@ -310,7 +310,6 @@ body {
   outline: 2px solid #af4fff;
 }
 
-
 .find {
   width: 359px;
   padding: 9px 20px 9px 48px;
@@ -326,6 +325,7 @@ body {
   background-image: url("../images/decor/find.svg");
   background-repeat: no-repeat;
   background-position: 16px 12px;
+  position: relative;
 }
 
 .find::placeholder {
@@ -333,8 +333,7 @@ body {
 }
 
 .find:focus {
-  outline: 2px solid #af4fff;
-  -moz-outline-radius: 0;
+ outline: none;
 }
 
 .find:disabled {
@@ -374,12 +373,12 @@ body {
   opacity: 30%;
 }
 
-.find_button:focus {
-  outline: 2px solid #af4fff;
-}
-
 .find_button:disabled {
   opacity: 30%;
+}
+
+.find_button:focus{
+  outline: none;
 }
 
 .field::placeholder {
@@ -509,7 +508,18 @@ body {
   padding-left: 68px;
   background-color: #000000;
   color:#FFE17F;
-  outline: 2px solid #af4fff;
+  position: relative;
+}
+
+.navigation_info_link:focus::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .info {
@@ -517,6 +527,7 @@ body {
   margin: 0 auto;
   margin-top: 140px;
   display: flex;
+  position: relative;
 }
 
 .about_and_contacts {
@@ -612,8 +623,16 @@ body {
   opacity: 30%;
 }
 
-.newsletter_button:focus {
-  outline: 2px solid #af4fff;
+.newsletter_button:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 
@@ -702,7 +721,7 @@ body {
 }
 
 .navigation_footer {
-  margin-top: 137px;
+  margin-top: 132px;
   margin-right: 180px;
   width: 448px;
   display: flex;
@@ -730,7 +749,7 @@ body {
 }
 
 .telephone_logo {
-  margin-top: 140px;
+  margin-top: 135px;
   width: 180px;
 }
 
@@ -834,6 +853,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
+  position: relative;
 }
 
 .slider-prev {
@@ -848,8 +868,21 @@ body {
   opacity: 30%;
 }
 
-.slider-button:focus {
-  outline: 1px solid #af4fff;
+.slider-button{
+  border: none;
+  outline: none;
+}
+
+.slider-button:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .slider-button:disabled {
@@ -879,6 +912,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffffff;
+  position: relative;
 }
 
 .slider-pagination-button-current {
@@ -893,8 +927,16 @@ body {
   opacity: 30%;
 }
 
-.slider-pagination-button:focus {
-  outline: 2px solid #af4fff;
+.slider-pagination-button:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -6px;
+  top: -6px;
 }
 
 .slider-pagination-button:disabled {
@@ -950,7 +992,19 @@ body {
   background-color: #000000;
 }
 
-.range-toggle:focus {
+.range-toggle:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
+}
+
+.range-input:focus{
   outline: 2px solid #af4fff;
 }
 
@@ -1274,6 +1328,19 @@ body {
   text-decoration: none;
   color: #000000;
   list-style: none;
+  position: relative;
+}
+
+.images_catalog_focus:focus::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .images_catalog {
@@ -1330,15 +1397,6 @@ body {
 
 .catalog_list:active {
   opacity: 30%;
-}
-
-.virtual_reality_img:focus .catalog_list {
-  outline: 2px solid #af4fff;
-}
-
-.virtual_reality_img:focus {
-  border: none;
-  outline: none;
 }
 
 .navigation_info_link {
@@ -1470,6 +1528,23 @@ body {
   opacity: 30%;
 }
 
+.delivery_on_order:focus{
+  border: none;
+  outline: none;
+}
+
+.delivery_on_order:focus:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
+}
+
 .info:hover .img_car::before {
   background-color: #ffc700;
 }
@@ -1480,10 +1555,6 @@ body {
 
 .info:active {
   opacity: 30%;
-}
-
-.info:focus {
-  outline: 2px solid #af4fff;
 }
 
 .square_info {
@@ -1577,6 +1648,12 @@ body {
   margin-top: 10px;
 }
 
+.contacts_phone:focus{
+  color: #af4fff;
+  border: none;
+  outline: none;
+}
+
 .more_about_us,
 .button_connection {
   font-family: "Raleway", sans-serif;
@@ -1615,6 +1692,7 @@ body {
 .telephone_footer {
   display: block;
   margin-bottom: 63px;
+  padding: 4px 0;
 }
 
 .telephone_footer:hover {
@@ -1663,6 +1741,7 @@ body {
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
+  padding: 4px 0;
 }
 
 
@@ -1712,7 +1791,7 @@ body {
 
 .social_footer {
   max-height: 40px;
-  margin-top: 62px;
+  margin-top: 56px;
 }
 
 .contacts-schedule {
@@ -2077,8 +2156,16 @@ body {
   opacity: 30%;
 }
 
-.product-card-link:focus {
-  outline: 2px solid #af4fff;
+.product-card-link:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .product-card-price {
@@ -2127,8 +2214,16 @@ body {
   opacity: 30%;
 }
 
-.pagination-show-more:focus {
-  outline: 2px solid #af4fff;
+.pagination-show-more:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .pagination-show-more:disabled {
@@ -2153,6 +2248,7 @@ body {
   padding: 25px;
   min-width: 128px;
   min-height: 71px;
+  position: relative;
 }
 
 .back:hover,
@@ -2169,14 +2265,39 @@ body {
   opacity: 10%;
 }
 
-.back:focus,
-.next:focus {
-  outline: 2px solid #af4fff;
-  opacity: 100%;
+.back:focus::after,
+.next:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
-.pagination-item:focus {
-  outline: 2px solid #af4fff;
+.back:focus,
+.next:focus{
+  opacity: 100%;
+  outline: none;
+}
+
+.pagination-link:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
+}
+
+.pagination-link:focus{
+  outline: none;
 }
 
 .pagination-link {
@@ -2196,6 +2317,7 @@ body {
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .pagination-current {
@@ -2219,6 +2341,7 @@ body {
   min-height: 71px;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .pagination_all {
@@ -2233,6 +2356,8 @@ body {
   color: #ffc700;
   text-decoration: none;
   position: relative;
+  left: 59px;
+  top: -3px;
 }
 
 .logo_htmlacademy:hover .html_svg {
@@ -2282,8 +2407,21 @@ body {
   outline: none;
 }
 
-.header_logo:focus {
-  outline: 2px solid #af4fff;
+.header_logo:focus{
+  border: none;
+  outline: none;
+}
+
+.header_logo:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .adress_footer_logo_go {
@@ -2294,6 +2432,7 @@ body {
   box-sizing: border-box;
   height: 36px;
   width: 145px;
+  position: relative;
 }
 
 .adress_footer_logo_go:hover {
@@ -2305,8 +2444,21 @@ body {
   outline: none;
 }
 
-.adress_footer_logo_go:focus {
-  outline: 2px solid #af4fff;
+.adress_footer_logo_go:focus{
+  border: none;
+  outline: none;
+}
+
+.adress_footer_logo_go:focus::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .delivery_text_general {
@@ -2931,8 +3083,16 @@ body {
   opacity: 30%;
 }
 
-.control:focus .control-mark {
-  outline: 2px solid #af4fff;
+.control-input:focus ~ .control-mark::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
 
 .control-input:disabled + .control {
@@ -3114,4 +3274,28 @@ body {
   top: 100px;
   z-index: -2;
   width: 100%;
+}
+
+.find_button:focus::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
+}
+
+.find:focus::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #af4fff;
+  z-index: 2;
+  padding: 4px;
+  left: -5px;
+  top: -6px;
 }
