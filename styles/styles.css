@@ -59,7 +59,7 @@ body {
   margin-top: 14px;
 }
 
-.navigation_catalog{
+.navigation_catalog {
   margin-bottom: 20px;
 }
 
@@ -123,7 +123,7 @@ body {
   padding: 14px 0;
 }
 
-.navigation_link::before{
+.navigation_link::before {
   content: "";
   width: 50px;
   height: 50px;
@@ -139,13 +139,15 @@ body {
 }
 
 .navigation_link:hover::before,
-.navigation_link:focus::before{
+.navigation_link:focus::before {
   background-image: url("../images/decor/minus.svg");
 }
+
 .navigation_link:hover::before,
-.navigation_link:active::before{
+.navigation_link:active::before {
   opacity: 100%;
 }
+
 .navigation_link:focus::after {
   content: "";
   position: absolute;
@@ -155,7 +157,7 @@ body {
   z-index: 2;
 }
 
-.navigation_link:focus{
+.navigation_link:focus {
   border: none;
   outline: none;
 }
@@ -333,7 +335,7 @@ body {
 }
 
 .find:focus {
- outline: none;
+  outline: none;
 }
 
 .find:disabled {
@@ -377,7 +379,7 @@ body {
   opacity: 30%;
 }
 
-.find_button:focus{
+.find_button:focus {
   outline: none;
 }
 
@@ -493,26 +495,27 @@ body {
   margin-bottom: 35px;
 }
 
-.navigation_info_link:hover  {
+.navigation_info_link:hover {
   padding-left: 68px;
   background-color: #000000;
-  color:#FFE17F;
+  color: #FFE17F;
 }
 
 .navigation_info_link:active {
   padding-left: 68px;
   background-color: #000000;
-  color:#FFE17F;
+  color: #FFE17F;
 }
+
 .navigation_info_link:focus {
   padding-left: 68px;
   background-color: #000000;
-  color:#FFE17F;
+  color: #FFE17F;
   position: relative;
   outline: #cccccc;
 }
 
-.navigation_info_link:focus::before{
+.navigation_info_link:focus::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -872,7 +875,7 @@ body {
   opacity: 30%;
 }
 
-.slider-button{
+.slider-button {
   border: none;
   outline: none;
 }
@@ -1008,7 +1011,7 @@ body {
   top: -6px;
 }
 
-.range-input:focus{
+.range-input:focus {
   outline: 2px solid #af4fff;
 }
 
@@ -1335,7 +1338,7 @@ body {
   position: relative;
 }
 
-.images_catalog_focus:focus::after{
+.images_catalog_focus:focus::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1347,7 +1350,7 @@ body {
   top: -6px;
 }
 
-.images_catalog_focus:focus{
+.images_catalog_focus:focus {
   outline: none;
 }
 
@@ -1429,16 +1432,16 @@ body {
   color: #ffe17f;
 }
 
-.navigation_info_link_delivery{
+.navigation_info_link_delivery {
   padding-left: 17px;
 }
 
-.navigation_info_link_guarantee{
-  padding-left:20px;
+.navigation_info_link_guarantee {
+  padding-left: 20px;
 }
 
-.navigation_info_link_credit{
-  padding-left:34px;
+.navigation_info_link_credit {
+  padding-left: 34px;
 }
 
 .navigation_info_link_black::after {
@@ -1536,12 +1539,12 @@ body {
   opacity: 30%;
 }
 
-.delivery_on_order:focus{
+.delivery_on_order:focus {
   border: none;
   outline: none;
 }
 
-.delivery_on_order:focus:after{
+.delivery_on_order:focus:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1656,7 +1659,7 @@ body {
   margin-top: 10px;
 }
 
-.contacts_phone:focus{
+.contacts_phone:focus {
   color: #af4fff;
   border: none;
   outline: none;
@@ -2131,6 +2134,7 @@ body {
 .down {
   opacity: 20%;
 }
+
 /*при необходимости добавить очередному элементу надпись New,
 создать правило для nth-child() c атрибутом display:flex*/
 .product-card::after {
@@ -2174,6 +2178,11 @@ body {
   padding: 4px;
   left: -5px;
   top: -6px;
+}
+
+.product-card-link:focus {
+  outline: none;
+  border: none;
 }
 
 .product-card-price {
@@ -2287,7 +2296,7 @@ body {
 }
 
 .back:focus,
-.next:focus{
+.next:focus {
   opacity: 100%;
   outline: none;
 }
@@ -2304,7 +2313,7 @@ body {
   top: -6px;
 }
 
-.pagination-link:focus{
+.pagination-link:focus {
   outline: none;
 }
 
@@ -2415,7 +2424,7 @@ body {
   outline: none;
 }
 
-.header_logo:focus{
+.header_logo:focus {
   border: none;
   outline: none;
 }
@@ -2452,7 +2461,7 @@ body {
   outline: none;
 }
 
-.adress_footer_logo_go:focus{
+.adress_footer_logo_go:focus {
   border: none;
   outline: none;
 }
@@ -3091,7 +3100,7 @@ body {
   opacity: 30%;
 }
 
-.control-input:focus ~ .control-mark::after{
+.control-input:focus ~ .control-mark::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -3284,7 +3293,7 @@ body {
   width: 100%;
 }
 
-.find_button:focus::after{
+.find_button:focus::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -3296,7 +3305,7 @@ body {
   top: -6px;
 }
 
-.find:focus + .find_button::after{
+.find:focus + .find_button::after {
   content: "";
   position: absolute;
   width: 359px;
@@ -3308,6 +3317,6 @@ body {
   top: -6px;
 }
 
-.slider_no_visible{
+.slider_no_visible {
   display: none;
 }
